@@ -6,7 +6,9 @@
 
 Wisp is an experience design prototype built on a [Bitcraze Crazyflie 2.1](https://www.bitcraze.io/) micro-quadcopter drone and a [PLUX/BITalino respiration sensor](https://plux.info/).
 
-By synchronizing its movements and lights the user's with breathing patterns, the drone can both lead and follow the breath in order to encourage, teach, guide, and augment breathwork. 
+By synchronizing its movements and lights the user's with breathing patterns, the drone can both lead and follow\* the breath in order to encourage, teach, guide, and augment breathwork. 
+
+*\* Work in progress.*
 
 The experience design is inspired and informed by how breathwork teachers work with children.
 
@@ -27,6 +29,25 @@ Sensors from [PLUX](https://plux.info/content/9-about-us):
 
 - biosignalsplux PZT respiration sensor
 - BITalino (r)evolution Board
+
+## Instructions
+
+1. Drill a hole through the LED Ring Deck, as described in [this tutorial](https://www.hackster.io/krichardsson/light-paint-with-a-drone-d050af), in order to make it work with the Flow Deck. Assemble the drone.
+2. Set up the Bitcraze and BITalino Python packages. (The Bitcraze GUI client is not needed.)
+    - https://github.com/bitcraze/crazyflie-lib-python
+    - https://github.com/BITalinoWorld/revolution-python-api
+3. Place the drone on a flat surface and leave it still.
+4. If you are going with the default settings, make sure you have only one Crazyflie turned on. 
+5. Run: wisp.py
+
+The drone will execute the following phases after establishing a connection with the script:
+
+1. **Pre-flight reset.** The LED ring will turn off.
+2. **Lift-off warning.** The drone will be still, and the LED ring will pulsate green 5 times.
+3. **Lift-off.** The drone will be still, mid-air, and the LED ring will pulsate green 5 times.
+4. **The breathing exercise.** Inhale as the drone rises. Hold as the drone holds. Exhale as the drone exhales. The LED ring will pulsate blue to give count.
+5. **Denouement.** The drone will be still, mid-air, and the LED ring will pulsate green 5 times.
+6. **Landing.** The LED ring will turn off.
 
 ## Related Research Publications
 
