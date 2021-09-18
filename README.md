@@ -19,6 +19,7 @@ Drone parts from [Bitcraze](https://www.bitcraze.io/):
 - LED Ring Deck
 - Multi-ranger Deck
 - Flow Deck v2
+- Extra-long headers
 
 Sensors from [PLUX](https://plux.info/content/9-about-us):
 
