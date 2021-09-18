@@ -6,9 +6,11 @@
 
 Wisp is an experience design prototype built on a [Bitcraze Crazyflie 2.1](https://www.bitcraze.io/) micro-quadcopter drone and a [PLUX/BITalino respiration sensor](https://plux.info/).
 
-By synchronizing its movements and lights the user's with breathing patterns, the drone can both lead and follow the breath in order to motivate, guide, and augment breathwork. 
+By synchronizing its movements and lights the user's with breathing patterns, the drone can both lead and follow the breath in order to encourage, teach, guide, and augment breathwork. 
 
 The experience design is inspired and informed by how breathwork teachers work with children.
+
+![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
 
 ## Hardware
 
