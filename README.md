@@ -12,8 +12,6 @@ By synchronizing its movements and lights the user's with breathing patterns, th
 
 The experience design is inspired and informed by how breathwork teachers work with children.
 
-![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
-
 ## Hardware
 
 Drone parts from [Bitcraze](https://www.bitcraze.io/):
@@ -48,6 +46,8 @@ The drone will execute the following phases after establishing a connection with
 4. **The breathing exercise.** Inhale as the drone rises. Hold as the drone holds. Exhale as the drone exhales. The LED ring will pulsate blue to give count.
 5. **Denouement.** The drone will be still, mid-air, and the LED ring will pulsate green 5 times.
 6. **Landing.** The LED ring will turn off.
+
+![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
 
 ## Related Research Publications
 
