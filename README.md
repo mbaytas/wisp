@@ -2,7 +2,9 @@
 
 *Drone-guided breathwork*
 
+
 ![image](https://user-images.githubusercontent.com/1661078/133905635-a8c8c75d-d044-445e-a5ed-cc29f1b67bbf.png)
+
 
 Wisp is an experience design prototype built on a [Bitcraze Crazyflie 2.1](https://www.bitcraze.io/) micro-quadcopter drone and a [PLUX/BITalino respiration sensor](https://plux.info/).
 
@@ -65,11 +67,13 @@ Example: `water_breathing(cf, mr, z_min, z_max, count=4.0, ts=3.0, n=3)` corresp
 
 *Exercises are under development, documentation TBC. Please see source and docstrings.*
 
-![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
-
 ### helpers.py
 
 *Documentation TBC. Please see source and docstrings.*
+
+
+![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
+
 
 ## Related Research Publications
 
