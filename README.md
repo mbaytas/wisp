@@ -87,8 +87,7 @@ Mehmet Aydın Baytaş, Markus Funk, Sara Ljungblad, Jérémie Garcia, Joseph La 
 
 Joseph La Delfa, Mehmet Aydın Baytaş, Emma Luke, Ben Koder, & Florian ‘Floyd’ Mueller (2020). **Designing Drone Chi: Unpacking the Thinking and Making of Somaesthetic Human-Drone Interaction**. In Proceedings of the 2020 Conference on Designing Interactive Systems (DIS ‘20). [\[PDF\]](https://www.baytas.net/research/pub/2020_DIS_Drone_Chi.pdf)
 
-Joseph La Delfa, Mehmet Aydın Baytaş, Rakesh Patibanda, Hazel Ngari, Rohit Ashok Khot, & Florian ‘Floyd’ Mueller (2020). **Drone Chi: Somaesthetic Human-Drone Interaction**. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). **\[Honourable Mention Award\]**  
-[\[PDF\]](https://www.baytas.net/research/pub/2020_CHI_Drone_Chi.pdf)
+Joseph La Delfa, Mehmet Aydın Baytaş, Rakesh Patibanda, Hazel Ngari, Rohit Ashok Khot, & Florian ‘Floyd’ Mueller (2020). **Drone Chi: Somaesthetic Human-Drone Interaction**. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). [\[PDF\]](https://www.baytas.net/research/pub/2020_CHI_Drone_Chi.pdf)
 
 Mehmet Aydın Baytaş, Markus Funk, Sara Ljungblad, Jérémie Garcia, Joseph La Delfa, & Florian ‘Floyd’ Mueller (2020). **iHDI 2020: Interdisciplinary Workshop on Human-Drone Interaction**. In Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems (CHI EA ‘20). [\[PDF\]](https://www.baytas.net/research/pub/2020_CHI_EA_iHDI.pdf)
 
