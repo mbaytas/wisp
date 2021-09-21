@@ -77,7 +77,7 @@ Mafalda Gamboa, Mehmet Aydın Baytaş and Sara Ljungblad (2021). **Wisp: a Desig
 
 Mafalda Gamboa, Mohammad Obaid, and Sara Ljungblad (2021). **Ritual Drones: Designing and Studying Critical Flying Companions**. Companion of the 2021 ACM/IEEE International Conference on Human-Robot Interaction. [\[ACM Digital Library\]](https://dl.acm.org/doi/abs/10.1145/3434074.3446363)
 
-## Somemwhat Related Research Publications
+## Kind of Related Research Publications
 
 Sara Ljungblad, Yemao Man, Mehmet Aydın Baytaş, Mafalda Samuelsson-Gamboa, Mohammad Obaid, & Morten Fjeld (2021). **What Matters in Professional Drone Pilots’ Practice? An Interview Study to Understand the Complexity of Their Work and Inform Human-Drone Interaction Research**. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI ’21). [\[PDF\]](https://www.baytas.net/research/pub/2021_CHI?Professional.pdf)
 
