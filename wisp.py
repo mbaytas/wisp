@@ -26,7 +26,7 @@ from exercises import bitalino_follow, box_breathing, bitalino_follow, water_bre
 
 # Settings
 bt_macAddress = "98:D3:71:FD:63:15" # BITalino MAC address, for Windows
-bt_vcp = "/dev/tty.BITalino-63-15-DevB" ## BITalino virtual COM port, for Mac
+bt_vcp = "/dev/tty.BITalino-63-15-DevB" # BITalino virtual COM port, for Mac
 bt_acqChannels = [0] # BITalino sensor channel
 bt_samplingRate = 100 # BITalino sampling rate
 cf_zMin = 0.6 # Minimum altitude (m)
