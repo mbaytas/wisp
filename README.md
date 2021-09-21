@@ -41,10 +41,10 @@ Sensors from [PLUX](https://plux.info/content/9-about-us):
 The drone will execute the following phases after establishing a connection with the script:
 
 1. **Pre-flight reset.** The LED ring will turn off.
-2. **Lift-off warning.** The drone will be still, and the LED ring will pulsate green 5 times.
-3. **Lift-off.** The drone will be still, mid-air, and the LED ring will pulsate green 5 times.
+2. **Lift-off warning.** The drone will be still, and the LED ring will pulsate green.
+3. **Lift-off.** The drone will be still, mid-air, and the LED ring will pulsate green.
 4. **The breathing exercise.** Inhale as the drone rises. Hold as the drone holds. Exhale as the drone exhales. The LED ring will pulsate blue to give count.
-5. **Denouement.** The drone will be still, mid-air, and the LED ring will pulsate green 5 times.
+5. **Denouement.** The drone will be still, mid-air, and the LED ring will pulsate green.
 6. **Landing.** The LED ring will turn off.
 
 ![image](https://user-images.githubusercontent.com/1661078/133905716-d94cf82b-4945-4aab-a3fb-4b31a2e94cc7.png)
