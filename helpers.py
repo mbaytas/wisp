@@ -8,19 +8,39 @@ from math import sqrt
 from time import sleep
 import sys
 
+from bitalino import BITalino
 
-def cf_hover_safely(cf, mr, z):
+
+def bt_connect(bt_address, bt_samplingRate=100, bt_acqChannels=[0]):
+    """
+    Connect to bitalino at 'bt_address'.
+    """
+    print(f'Connecting to BITalino...')
+    for i in range(0,10):
+        print(f'Connection attempt {str(i+1)}/10...')
+        try:
+            bt = BITalino(bt_address, timeout=2)
+        except:
+            print("Failed! Retrying...")
+            if i == 9:
+                print("Failed to connect to BITalino. Exiting.")
+                sys.exit()
+        else:
+            print("Connected to Bitalino " + bt_address)
+            bt.start(bt_samplingRate, bt_acqChannels)
+            return bt
+
+
+def cf_hover_safely(cf, mr, z, cf_maxSpeed_xy = 0.5, cf_buffer_xy = 0.8):
     """
     Set hover setpoint while avoiding collisions.
     Recommended: check cf_is_safe() before calling this.
     """
-    cf_maxSpeed_xy = 0.7 # m/s
-    cf_buffer_xy = 0.7 # m
-
-    # Avoid obstacles
+    # Reset
     vx = 0.0
     vy = 0.0
 
+    # Avoid obstacles
     if mr.front is not None:
         dvx = remap(mr.front, 0.0, cf_buffer_xy, cf_maxSpeed_xy, 0.0)
         vx -= dvx
@@ -80,7 +100,7 @@ def cf_land_safely(cf, mr, z0):
     cf_reset_ledring(cf, brightness=100)
     z = z0
     while (z > 0):
-        z -= 0.1
+        z -= 0.05
         print(f'z: {z}')
         cf_hover_safely(cf, mr, z)
         try:
@@ -89,7 +109,7 @@ def cf_land_safely(cf, mr, z0):
             cf.param.set_value('ring.solidBlue', str(int(z*10)))
         except Exception as e:
             pass
-        sleep(0.2)
+        sleep(0.1)
     print('Landed.')
     sys.exit()
 
@@ -131,6 +151,27 @@ def cf_reset_ledring(cf, brightness=10):
         cf.param.set_value('ring.solidRed', str(10))
         cf.param.set_value('ring.solidGreen', str(10))
         cf.param.set_value('ring.solidBlue', str(10))
+
+
+def cf_takeoff_safely(cf, mr, z0):
+    """
+    Take off slowly using hover setpoints, while avoiding collisions.
+    """
+    print('Take-off sequence initiated.')
+    cf_reset_ledring(cf, brightness=0)
+    z = z0
+    while (z < z0):
+        z += 0.1
+        print(f'z: {z}')
+        cf_hover_safely(cf, mr, z)
+        try:
+            cf.param.set_value('ring.solidRed', str(int(z*10)))
+            cf.param.set_value('ring.solidGreen', str(int(z*10)))
+            cf.param.set_value('ring.solidBlue', str(int(z*10)))
+        except Exception as e:
+            pass
+        sleep(0.1)
+    print('Hovering.')
 
 
 def remap(val, inMin, inMax, outMin, outMax):
