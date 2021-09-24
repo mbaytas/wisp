@@ -109,6 +109,9 @@ def bitalino_follow(cf, mr, bt, z_min, z_max, duration=30):
         # Compute z and LED brightness based on strain
         z = remap(pzt, -50, 50, z_min, z_max)
         l = int(remap(pzt, -50, 50, 20, 200))
+        # Safety check
+        if not cf_is_safe(mr):
+            return
         # Actuate
         cf_hover_safely(cf, mr, z)
         cf.param.set_value('ring.solidRed', str(l))
